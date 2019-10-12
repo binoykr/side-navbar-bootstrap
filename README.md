@@ -1,21 +1,20 @@
 ## Introduction
-This project contains the fancy top navigation bar developed in react application with bootstrap. This navigation bar fully supported bootstrap 4.0.
+This project contains the fancy top and side navigation bar developed in react application with bootstrap. This navigation bar fully supported bootstrap 4.0.
 ## Run Command
 
 * npm start
 
 ## Screens
-The below screen full view of top navigation bar.
-<img src="docs/images/img-main.png" width="400" height="300">
+The below screen desktop full view of top and side navigation bar.
+<img src="docs/images/main.png" width="400" height="300">
 
-The below screen full view of profile dropdown menu in top navigation bar.
-<img src="docs/images/img-profile.png" width="400" height="300">
+The below screen mobile view.
+<img src="docs/images/mobile-responsive.png" width="400" height="300">
 
-The below screen full view of message dropdown menu in top navigation bar.
-<img src="docs/images/img-message.png" width="400" height="300">
-
-The below screen full view of notification dropdown menu in top navigation bar.
-<img src="docs/images/img-notification.png" width="400" height="300">
+The below screen side bar view on mobile view.
+<img src="docs/images/mobile-responsive-side.png" width="400" height="300">
 
 ## References
+* [Responsive Side Bar & Top Bar](https://startbootstrap.com/templates/simple-sidebar/)
+* [Fancy Side Bar](https://bootsnipp.com/snippets/Q0dAX)
 * [Admin UI](https://getbootstrapadmin.com/remark/iconbar/pages/email-articles.html)

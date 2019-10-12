@@ -3,8 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  //https://startbootstrap.com/templates/simple-sidebar/
-
   return (
     <div class="d-flex chiller-theme" id="wrapper">
 
@@ -21,7 +19,7 @@ function App() {
 
               <li class="nav-item sidebar-dropdown">
                 <a href="#">
-                  <i class="fa fa-tachometer-alt"></i>
+                  <i class="fa fa-desktop"></i>
                   <span>Dashboard</span>
                   <span class="badge badge-pill badge-warning">New</span>
                 </a>
