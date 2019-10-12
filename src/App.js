@@ -160,18 +160,14 @@ function App() {
       {/* <!-- Page Content --> */}
       <div class="page-content-wrapper">
 
-        <nav class="navbar navbar-expand-lg navbar-light topbar border-bottom">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light topbar border-bottom">
+          <a class="nav-link" id="menu-toggle" href="#"><i class="fa fa-arrow-left"></i></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTopbar" aria-controls="navbarTopbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarTopbar">
             <ul class="navbar-nav mr-auto">
-
-              <li class="nav-item">
-                <a class="nav-link" id="menu-toggle" href="#"><i class="fa fa-arrow-left"></i></a>
-              </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
               </li>
