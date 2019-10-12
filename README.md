@@ -5,15 +5,15 @@ This project contains the fancy top and side navigation bar developed in react a
 * npm start
 
 ## Screens
-The below screen desktop full view of top and side navigation bar.
+* The below screen desktop full view of top and side navigation bar.
 <img src="docs/images/main.png" width="500" height="300" />
 
 
-The below screen mobile view.
+* The below screen mobile view.
 <img src="docs/images/mobile-responsive.png" width="200" height="300" />
 
 
-The below screen side bar view on mobile view.
+* The below screen side bar view on mobile view.
 <img src="docs/images/mobile-responsive-side.png" width="200" height="300" />
 
 
