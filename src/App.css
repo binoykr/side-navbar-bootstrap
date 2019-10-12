@@ -1,0 +1,341 @@
+
+  
+  /*-------------------- main ----------------------*/  
+  .container-fluid {
+    padding: 0px;
+  }
+
+  /*-------------------- dropdown - media: header & footer ----------------------*/
+
+  .dropdown-menu.style-media {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .dropdown-menu.style-media .dropdown-menu-container {
+    width: 350px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu.style-media .header, .footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dropdown-menu.style-media .header {
+    border-bottom: 1px solid #e4eaec;
+  }
+
+  .dropdown-menu.style-media .footer {
+    border-top: 1px solid #e4eaec;
+  }
+
+  .dropdown-menu.style-media .header .title {
+    margin-left: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .dropdown-menu.style-media .header .badge {
+    height: 20px;
+    margin-right: 10px;
+  }
+
+
+  .dropdown-menu.style-media .footer .body {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 10px;
+  }
+
+  .dropdown-menu.style-media .footer .button {
+    width: 50px;
+    text-align: center;
+  }
+
+   
+  .dropdown-menu.style-media .item-group
+  {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+    border: none;
+    border-radius: 0!important;
+  }
+
+
+  /*-------------------- dropdown - media: container ----------------------*/
+  .dropdown-menu.style-media .container
+  {
+    flex-grow: 1;
+    overflow-y: auto; 
+    padding: 0px;
+  }
+
+  .dropdown-menu.style-media .container .content
+  {
+    display: block;
+    width: 100%;
+  }
+
+  /*-------------------- dropdown - media: icon ----------------------*/  
+  .dropdown-menu.style-media .icon {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+  }
+
+  .dropdown-menu.style-media .icon.circle {
+    border-radius: 1000rem;
+    line-height: 25px;
+  }
+
+  /*-------------------- dropdown - media: item media ----------------------*/
+
+  .dropdown-menu.style-media .item-group:first-child .media
+  {
+    border-top: none;
+  }
+
+  .dropdown-menu.style-media .media
+  {
+    padding: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid #e4eaec;
+  }
+  
+  .dropdown-menu.style-media .media .body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .dropdown-menu.style-media .media .heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .dropdown-menu.style-media .media .meta {
+    margin-bottom: 3px;
+    font-size: 10px;
+    color: #a3afb7;
+  }
+
+  .dropdown-menu.style-media .media .detail {
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: #a3afb7;
+  }
+
+  /*-------------------- navbar sidebar ----------------------*/
+  
+  .sidebar .sidebar-content {
+    max-height: calc(100% - 30px);
+    height: calc(100% - 30px);
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .sidebar .navbar {
+    margin: 0px!important;
+    padding: 0px!important;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar {
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .header span {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 20px 5px 20px;
+    display: inline-block;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 30px 8px 20px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar li a i {
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar li a:hover > i::before {
+    display: inline-block;
+    animation: swing ease-in-out 0.5s 1 alternate;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown > a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    font-style: normal;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: 0 0;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+  }
+  
+
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu ul {
+    padding: 5px 0;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li {
+    padding-left: 25px;
+    font-size: 13px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+    font-size: 8px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar li a span.label,
+  .sidebar .navbar .navbar-nav.menu-bar li a span.badge {
+    float: right;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .badge,
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .label {
+    float: right;
+    margin-top: 0px;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-submenu {
+    display: none;
+  }
+  
+  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active > a:after {
+    transform: rotate(90deg);
+    right: 17px;
+  }
+
+  /*-------------------- commons : css ----------------------*/  
+  .pr-10 {
+    padding-right: 10px!important;
+  }
+
+  /*-------------------- common : colors ----------------------*/  
+  .white {
+    color: #fff!important;  
+  }
+  
+  .bg-red-600 {
+    background-color: #ff4c52!important;
+  }
+
+  .bg-green-600 {
+    background-color: #11c26d!important;
+  }
+
+  .bg-blue-600 {
+    background-color: #3e8ef7!important;
+  }
+
+  .bg-orange-600 {
+    background-color: #eb6709!important;
+  }
+
+  /*-------------------- theme: chiller - nav bar ----------------------*/  
+
+  .chiller-theme .navbar {
+    background-color: #31353D;
+  }
+
+  .chiller-theme .navbar > a,
+  .chiller-theme .navbar .collapse .navbar-nav .nav-item > a {
+    color: #b8bfce;
+  }
+  
+  /*-------------------- theme: chiller - nav bar dropdown ----------------------*/  
+
+  .chiller-theme .dropdown-menu.style-media .footer>a:hover {
+    background-color: transparent!important;
+    color: #7d8efa!important;
+  }
+
+  .chiller-theme .dropdown-menu.style-media .footer {
+    background-color: #f3f7f9;
+  }
+
+  .chiller-theme .dropdown-menu.style-media .item-group:hover {
+    color: #76838f;
+    background-color: #f3f7f9;
+  }
+
+  /*-------------------- theme: chiller - nav side bar ----------------------*/  
+  .chiller-theme .sidebar .navbar.bg-light {
+    background-color: #31353D!important;
+  }
+
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar a {
+      color: #818896!important;
+  }
+
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar li:hover>a,
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active>a {
+      color: #b8bfce!important;
+  }
+
+
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar li:hover a i,
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:hover:before,
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active a i {
+      color: #16c7ff!important;
+      text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
+  }
+
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar ul li a i,
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown div {
+      background: #3a3f48!important;
+  }
+
+  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .header span {
+      color: #6c7b88!important;
+  }
