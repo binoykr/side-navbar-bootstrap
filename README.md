@@ -6,14 +6,14 @@ This project contains the fancy top and side navigation bar developed in react a
 
 ## Screens
 The below screen desktop full view of top and side navigation bar.
-<img src="docs/images/main.png" width="500" height="300"/>
-<br/>
+<img src="docs/images/main.png" width="500" height="300" />
+<br />
 The below screen mobile view.
-<img src="docs/images/mobile-responsive.png" width="400" height="300"/>
-<br/>
+<img src="docs/images/mobile-responsive.png" width="400" height="300" />
+<br />
 The below screen side bar view on mobile view.
-<img src="docs/images/mobile-responsive-side.png" width="400" height="300"/>
-<br/>
+<img src="docs/images/mobile-responsive-side.png" width="400" height="300" />
+<br />
 
 ## References
 * [Responsive Side Bar & Top Bar](https://startbootstrap.com/templates/simple-sidebar/)
