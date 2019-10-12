@@ -1,8 +1,174 @@
+  /*-------------------- main ----------------------*/  
+  .container-fluid.main {
+    padding: 0px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 
   
-  /*-------------------- main ----------------------*/  
-  .container-fluid {
-    padding: 0px;
+
+  /*-------------------- sidebar: wrapper ----------------------*/
+
+  .sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+  .sidebar-wrapper .sidebar-heading {
+    padding: 10px 20px; 
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  #wrapper.toggled .sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    .sidebar-wrapper {
+      margin-left: 0;
+    }
+
+    .page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper.toggled .sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  .sidebar-wrapper .sidebar-content {
+    max-height: calc(100% - 30px);
+    height: calc(100% - 30px);
+    width: 18rem;
+    overflow-y: auto;
+    position: relative;
+  }
+
+   
+  /*-------------------- sidebar: navbar ----------------------*/
+  
+  .sidebar-wrapper .navbar {
+    margin: 0px!important;
+    padding: 0px!important;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar {
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .header span {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 20px 5px 20px;
+    display: inline-block;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 30px 8px 20px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar li a i {
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar li a:hover > i::before {
+    display: inline-block;
+    animation: swing ease-in-out 0.5s 1 alternate;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown > a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f105";
+    font-style: normal;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: 0 0;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+  }
+  
+
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu ul {
+    padding: 5px 0;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li {
+    padding-left: 25px;
+    font-size: 13px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
+    font-size: 8px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar li a span.label,
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar li a span.badge {
+    float: right;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .badge,
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .label {
+    float: right;
+    margin-top: 0px;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-submenu {
+    display: none;
+  }
+  
+  .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown.active > a:after {
+    transform: rotate(90deg);
+    right: 17px;
+  }
+
+  /*-------------------- navbar: topbar ----------------------*/
+  .navbar.topbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
   }
 
   /*-------------------- dropdown - media: header & footer ----------------------*/
@@ -143,118 +309,6 @@
     color: #a3afb7;
   }
 
-  /*-------------------- navbar sidebar ----------------------*/
-  
-  .sidebar .sidebar-content {
-    max-height: calc(100% - 30px);
-    height: calc(100% - 30px);
-    overflow-y: auto;
-    position: relative;
-  }
-
-  .sidebar .navbar {
-    margin: 0px!important;
-    padding: 0px!important;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar {
-    padding-bottom: 10px;
-    width: 100%;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .header span {
-    font-weight: bold;
-    font-size: 14px;
-    padding: 15px 20px 5px 20px;
-    display: inline-block;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar li a {
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    position: relative;
-    padding: 8px 30px 8px 20px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar li a i {
-    margin-right: 10px;
-    font-size: 12px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 4px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar li a:hover > i::before {
-    display: inline-block;
-    animation: swing ease-in-out 0.5s 1 alternate;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown > a:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f105";
-    font-style: normal;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    background: 0 0;
-    position: absolute;
-    right: 15px;
-    top: 14px;
-  }
-  
-
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu ul {
-    padding: 5px 0;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li {
-    padding-left: 25px;
-    font-size: 13px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:before {
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 400;
-    font-style: normal;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 10px;
-    font-size: 8px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar li a span.label,
-  .sidebar .navbar .navbar-nav.menu-bar li a span.badge {
-    float: right;
-    margin-top: 8px;
-    margin-left: 5px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .badge,
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a .label {
-    float: right;
-    margin-top: 0px;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-submenu {
-    display: none;
-  }
-  
-  .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active > a:after {
-    transform: rotate(90deg);
-    right: 17px;
-  }
 
   /*-------------------- commons : css ----------------------*/  
   .pr-10 {
@@ -282,14 +336,14 @@
     background-color: #eb6709!important;
   }
 
-  /*-------------------- theme: chiller - nav bar ----------------------*/  
+  /*-------------------- theme: chiller - nav bar topbar ----------------------*/  
 
-  .chiller-theme .navbar {
-    background-color: #31353D;
+  .chiller-theme .navbar.topbar {
+    background-color: #31353D!important;
   }
 
-  .chiller-theme .navbar > a,
-  .chiller-theme .navbar .collapse .navbar-nav .nav-item > a {
+  .chiller-theme .navbar.topbar > a,
+  .chiller-theme .navbar.topbar .collapse .navbar-nav .nav-item > a {
     color: #b8bfce;
   }
   
@@ -310,32 +364,35 @@
   }
 
   /*-------------------- theme: chiller - nav side bar ----------------------*/  
-  .chiller-theme .sidebar .navbar.bg-light {
+
+  .chiller-theme .sidebar-wrapper,
+  .chiller-theme .sidebar-wrapper .navbar.bg-light {
     background-color: #31353D!important;
   }
 
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar a {
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar a {
       color: #818896!important;
   }
 
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar li:hover>a,
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active>a {
+  .chiller-theme .sidebar-wrapper .sidebar-heading, 
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar li:hover>a,
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown.active>a {
       color: #b8bfce!important;
   }
 
 
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar li:hover a i,
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:hover:before,
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown.active a i {
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar li:hover a i,
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown .sidebar-submenu li a:hover:before,
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown.active a i {
       color: #16c7ff!important;
       text-shadow:0px 0px 10px rgba(22, 199, 255, 0.5);
   }
 
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar ul li a i,
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .sidebar-dropdown div {
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar ul li a i,
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .sidebar-dropdown div {
       background: #3a3f48!important;
   }
 
-  .chiller-theme .sidebar .navbar .navbar-nav.menu-bar .header span {
+  .chiller-theme .sidebar-wrapper .navbar .navbar-nav.menu-bar .header span {
       color: #6c7b88!important;
   }
